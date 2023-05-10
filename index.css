@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --BackgroundColor: #262a2d;
+    --TextColor: white;
+    --ResultBackground: white;
+    --BackgroundColorQuiz: #2e95f6;
+    --BackgroundHover: #0e66eb;
+    --TextColorResult: #333d3f;
+    --hoverColor: #034f96;
+
+    --FontProject:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--BackgroundColor);
+    color: var(--TextColor);
+    font-size: 1em;
+    overflow-x: hidden;
+    font-family: var(--FontProject);
+    user-select: none;
+  
+}
+
+.backgroundQuiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+    background-color: var(--BackgroundColorQuiz);
+    width: 100%;
+    height: 8em;
+}
+
+.backgroundQuiz h1 {
+    font-size: 4em;
+}
+
+.questionsContainer {
+    /* background-color: #4c8ef0; */
+    max-width: 600px;
+    min-width: 300px;
+    line-height: 2.3em; 
+    margin: 0 24.7%;
+    /* margin-left: 17.7em; */
+    margin-bottom: 0.5em;
+    transition: 0.1s linear;
+    
+}
+
+@media (max-width: 500px) {
+
+    .questionsContainer{
+        margin: 0 11%;
+    }
+    
+    h2{
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        white-space: normal;
+        /* align-items: center; */   
+    }
+    .container {
+        padding-top: 1.5em;
+        padding-right: 0.9em;
+    }
+}
+
+.questionTitle{
+    padding-right: 0.7em;
+    text-align: center;
+    height: 2em;
+    font-family: var(--FontProject);
+    margin: 1.5em 0 0.8em 0;
+    font-size: 1.3em;
+}
+
+.ResultBackground {
+    display: flex;
+    align-items: center;
+    height: 6em;
+    background-color: var(--ResultBackground);
+    display: none;
+}
+
+form p {
+    font-weight: 700;
+}
+
+form label {
+    font-weight: 100;
+}
+
+.result{
+    padding-top: 0.4em;
+    font-family: var(--FontProject);
+    color: var(--TextColorResult);
+    align-items: baseline;    
+    text-align: center;
+}
+
+.result span {
+    color: var(--BackgroundColorQuiz);
+    font-size: 2em;
+    margin: 0em 0.2em;
+}
+
+
+form {    
+    padding-bottom: 2em;
+}
+
+.questionsContainer input {
+    margin-left: 1.4em;
+}
+
+button {
+    display: block;
+    position: relative;
+    margin: 0 auto;  
+    border: 0;
+    font-size: 1em;
+    padding: 0.6em;
+    background-color: var(--BackgroundColorQuiz);
+    color: var(--TextColor);
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--hoverColor);
+}
